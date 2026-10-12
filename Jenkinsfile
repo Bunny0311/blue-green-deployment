@@ -18,7 +18,7 @@ pipeline {
         stage('Build Green Image') {
             steps {
                 sh '''
-                    docker build -t myapp:v2 green/
+                    docker build -t myapp:v2 Dockerfile green/
                 '''
             }
         }
